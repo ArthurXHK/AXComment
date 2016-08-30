@@ -2,7 +2,7 @@
 
 A better comment command in Xcode. 
 
-Create it with learning Session 414 "Using and Extending the Xcode Source Editor" in WWDC 2016.
+It is created with learning Session 414 "Using and Extending the Xcode Source Editor" in WWDC 2016.
 
 Please **`star`** it, if you like it. Or create issues and tell me how to improve it.
 
@@ -46,7 +46,7 @@ class TmpClass: NSObject {
 
 ## How this better comment command works?
 
-It will work **MUCH BETTER!!**
+It can work **MUCH BETTER!!**
 
 ``` swift
 class TmpClass: NSObject {
@@ -56,7 +56,7 @@ class TmpClass: NSObject {
 }
 ```
 
-This case works well, too!!
+It also works well in this case!!
 
 ``` swift
 class TmpClass: NSObject {
