@@ -425,7 +425,7 @@
 				8EB7E2A61D69869C00841F15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		8EB7E2A71D69869C00841F15 /* Build configuration list for PBXNativeTarget "AXComment" */ = {
 			isa = XCConfigurationList;
@@ -434,7 +434,7 @@
 				8EB7E2A91D69869C00841F15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		8EB7E2BF1D69879C00841F15 /* Build configuration list for PBXNativeTarget "Extended Comment" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +443,7 @@
 				8EB7E2BE1D69879C00841F15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
