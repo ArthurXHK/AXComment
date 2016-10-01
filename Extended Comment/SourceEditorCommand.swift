@@ -11,6 +11,7 @@ import XcodeKit
 
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     
+    // MARK: - Regex
     let regexForHasComment: NSRegularExpression? = {
         do {
             return try NSRegularExpression(pattern: "^[\\s]*[/]{2,}[\\s]*")
@@ -35,7 +36,14 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         }
     }()
     
-    func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: (Error?) -> Void ) -> Void {
+    // MARK: - XCSourceEditorCommand
+    /** Perform the action associated with the command using the information in \a invocation. Xcode will pass the code a completion handler that it must invoke to finish performing the command, passing nil on success or an error on failure.
+     
+     A canceled command must still call the completion handler, passing nil.
+     
+     \note Make no assumptions about the thread or queue on which this method will be invoked.
+     */
+    func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void) {
         guard
             let regexForHasComment    = regexForHasComment,
             let regexForRemoveComment = regexForRemoveComment,
